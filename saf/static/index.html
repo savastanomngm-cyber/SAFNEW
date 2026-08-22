@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skia Alpha Fund — Terminal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="terminal.css">
+<script src="https://unpkg.com/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
+</head>
+<body>
+<header>
+  <div class="brand" id="brand" title="Open brand system">
+    <div class="emblem">α</div>
+    <div><div class="saf">SAF</div><div class="full">SKIA ALPHA FUND</div></div>
+  </div>
+  <nav id="nav">
+    <button data-tab="dash" class="on">Dashboard</button>
+    <button data-tab="news">News</button>
+    <button data-tab="screener">Screener</button>
+    <button data-tab="agents">TradingAgents</button>
+    <button data-tab="intraday">Intraday</button>
+    <button data-tab="positions">Positions</button>
+    <button data-tab="memory">Memory</button>
+    <button data-tab="diag">Diagnostics</button>
+    <button data-tab="settings">Settings</button>
+  </nav>
+  <div class="pills"><span class="pill ok" id="pillAI">AI LIVE</span><span class="pill ok" id="pillData">LIVE DATA</span></div>
+</header>
+<main id="main"></main>
+<div id="mbg"><div class="modal"><button class="btn ghost x" data-close>✕</button><h2 id="mtitle"></h2><div id="mbody"></div></div></div>
+<footer>SKIA ALPHA FUND · SHADOW ALPHA TERMINAL · α = EXCESS RETURN · CLICK ANYTHING TO DRILL DOWN</footer>
+<script src="client.js"></script>
+</body>
+</html>
